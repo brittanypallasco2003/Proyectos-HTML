@@ -1,0 +1,85 @@
+/*selectores*/
+body{
+    color: tomato;
+}
+
+/*selector con su elmento*/
+h1{
+    color: blueviolet;
+}
+
+/*selector con la id de un elemento*/
+#title{
+    color: aqua;
+}
+
+/*selector con su elemento*/
+p{
+    color: #000;
+}
+
+/*Selector de clases*/
+
+.texto{
+    color: #000;
+}
+
+/*selector de una etiqueta de p que contiene una clase=texto*/
+
+p.texto {   /*aqui se le indican que a todas las etiquetas de p que contengan la clase de texto, asignarles el color...*/
+
+    color: cadetblue;
+
+}
+
+p.especial{/**/
+    color: mediumblue; /*aqui se le aplica el color mediumblue a las dos etiquetas de p con clase especial*/
+}
+
+/*se mostrara la ultima instruccion que se escriba*/
+
+/*se seleccionra todas las etiquetas de p dentro de un div*/
+div p{/*este selector indica que de TODAS LAS ETIQUETAS DE div que contengan hijos de p tendran el estilo entre llaves. Aplica para toda la descendencia. NO SOLO HJOS DIRECTOS*/
+    color: olivedrab;
+}
+
+/*se seleccionara todas las etiquetas de h2 dentro de un div*/
+div h2{
+    color: indigo;
+}
+
+/*se seleccionara mas de un elemento, el primero seran los h2 dentro de un div, el segundo todos los h3*/
+div h2, h3{
+    color:palegreen;
+}
+
+/*se seleccionaran mas de un elemento dentro de la etiqueta de div*/
+div h2, div h3{
+    color:magenta;
+}
+
+/*selector universal*/
+/*selecciona todos lo elementos html que no han tenido un diseño, en este caso el diseño de TAMAÑO DE FUENTE*/
+*{
+  font-size: 24px;
+  color: black;  /*el color de black no se aplicara porque esta etiqueta es menos especifica. A pesar de ser la ultima que se escribio. Ademas de que esta etiqueta selecciona todos los elementos, pero SOLO DA EL DISEÑO INDICADO a los que NO LO TIENEN*/
+}
+
+h1.color{
+    color: brown;
+}
+
+/*colores con valores hexagesimales
+ comienza con #
+seguido de 6 caracteres: del 0 hasta la f
+*/
+
+/*
+tambien puede estar formado por 3 digitos, la ubicacion de la f en 
+cualquiera de las 3 posiciones el color rojo, verde y azul 
+*/
+
+h1.color{
+    color: #000;/* cero es la completa ausencia del color--> negro*/
+    /*f--> la maxima expresion del color*/
+}
